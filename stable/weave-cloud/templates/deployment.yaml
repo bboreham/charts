@@ -33,6 +33,7 @@ spec:
         - -agent.poll-url=https://get.weave.works/k8s/agent.yaml?instanceID={{"{{.InstanceID}}"}}
         - -wc.hostname=cloud.weave.works
         - -wc.token=$(WEAVE_CLOUD_TOKEN)
+        - -feature.self-update=false
         env:
         - name: WEAVE_CLOUD_TOKEN
           valueFrom:
